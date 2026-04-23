@@ -48,18 +48,36 @@ int numIslands(vector<vector<char>>& grid) {
 }
 
 int main() {
-	/*    vector<vector<char>> grid = {
+
+vector<vector<char>> grid = {
+    {'0','0','0'},
+    {'0','0','0'},
+    {'0','0','0'}
+};
+/*
+vector<vector<char>> grid = {
+    {'1','1','1'},
+    {'1','1','1'},
+    {'1','1','1'}
+};
+
+vector<vector<char>> grid = {
+    {'0','0','0'},
+    {'0','0','0'},
+    {'0','0','0'}
+};
+	 vector<vector<char>> grid = {
 	      {'1','1','0','0','0'},
 	      {'1','1','0','0','0'},
 	      {'0','0','1','0','0'},
 	      {'0','0','0','1','1'}
 	      };
-	 */
+	
 	vector<vector<char>> grid = {
 		{'1','0','0'},
 		{'0','1','1'},
 		{'0','1','1'}
-	};
+	};*/
 	cout << numIslands(grid) << endl;
 	return 0;
 }

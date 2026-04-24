@@ -17,6 +17,7 @@ vector<int> twoSum(vector<int>& nums, int target) {
 	}
 	return {};
 }
+
 vector<int> two(vector<int>&nums, int target)
 {
 	for(int i = 0; i<nums.size();i++)

@@ -24,6 +24,11 @@ struct TreeNode {
 int maxSum;
 
 int gain(TreeNode* root) {
+if(!root) return 0;
+int leftGain = max(0,gain(root->left));
+int rightGain = max(0,gain(root->right));
+maxSum = max(maxSum,root->val + leftGain + rightGain);
+return root->val + max(leftGain,rightGain);
     // Base: null → return 0
     // leftGain  = max(0, gain(root->left))
     // rightGain = max(0, gain(root->right))

@@ -1,0 +1,3 @@
+int bad_hash(int key) {
+    return key % 10;  // All even numbers → even buckets
+}
